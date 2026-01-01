@@ -3,6 +3,7 @@ import HPSProjectCard from "./HospitalManagementSystem/HPSProjectCard";
 import TPAgentProjectCard from "./AI Travel Agent/TPAgentProjectCard";
 import MovieStoreProjectCard from "./Movie Store/MovieStoreProjectCard";
 import CampusCraveProjectCard from "./CampusCrave/CampusCraveProjectCard";
+import RoboNavProjectCard from "./RoboNav/MovieStoreProjectCard";
 
 function ProjectsCard() {
     return (
@@ -13,7 +14,7 @@ function ProjectsCard() {
             <div className = "text-center py-17">
                 <h1 className = "text-center text-7xl text-slate-900 font-sans mb-4 font-montserrat font-bold">My Projects</h1>
                 <p className="text-xl text-slate-700 font-poppins text-center">
-                        Developing my skills and passions
+                        Building my skills and passions
                 </p>
             </div>
             <div className="grid lg:grid-cols-3 gap-6 pt-1 px-5">
@@ -21,6 +22,7 @@ function ProjectsCard() {
                 <HPSProjectCard />
                 <MovieStoreProjectCard />
                 <CampusCraveProjectCard />
+                <RoboNavProjectCard />
             </div>
         </section>
     );
