@@ -22,7 +22,7 @@ function Hero() {
                     <Card />
                 </div>
                 <div className="flex-1 flex flex-col items-center justify-center gap-7"> 
-                    <h1 className="text-8xl text-slate-900 font-montserrat font-bold mb-4">
+                    <h1 className="text-5xl text-slate-900 font-montserrat font-bold mb-4">
                         Keshav Sheth's Portfolio
                     </h1>
                     <h2 className="text-5xl text-slate-900 font-inter mb-4">
