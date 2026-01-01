@@ -2,6 +2,7 @@ import Card from "../Card";
 import HPSProjectCard from "./HospitalManagementSystem/HPSProjectCard";
 import TPAgentProjectCard from "./AI Travel Agent/TPAgentProjectCard";
 import MovieStoreProjectCard from "./Movie Store/MovieStoreProjectCard";
+import CampusCraveProjectCard from "./CampusCrave/CampusCraveProjectCard";
 
 function ProjectsCard() {
     return (
@@ -19,6 +20,7 @@ function ProjectsCard() {
                 <TPAgentProjectCard />
                 <HPSProjectCard />
                 <MovieStoreProjectCard />
+                <CampusCraveProjectCard />
             </div>
         </section>
     );
