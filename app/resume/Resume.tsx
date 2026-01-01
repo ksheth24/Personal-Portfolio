@@ -40,7 +40,7 @@ function ResumeCard() {
                     <div className="hover:shadow-md transiton-shadow hover:bg-gray-100 rounded-2xl bg-white backdrop-blur-md border border-white/70 shadow-lg p-6 ring-1 ring-black/10">
                         <h3 className = "mb-2 text-lg font-semibold font-poppins">GitHub</h3>
                         <p className = "text-gray-600">
-                            Insert_Link
+                            ksheth24
                         </p>
                     </div>
 
