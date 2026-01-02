@@ -16,7 +16,7 @@ function ResumeCard() {
                     </div>
                     <div className="hover:shadow-md transiton-shadow hover:bg-gray-100 rounded-2xl bg-white backdrop-blur-md border border-white/70 shadow-lg p-6 ring-1 ring-black/10">
                         <div className = "flex flex-row"> 
-                            <h3 className = "mb-2 text-lg font-semibold font-poppins">Email 📧</h3>
+                            <h3 className = "mb-2 text-lg font-semibold font-poppins">Email </h3>
                         </div>
                         <p className = "text-gray-600">
                             keshavsheth11@gmail.com
@@ -24,7 +24,7 @@ function ResumeCard() {
                     </div>
 
                     <div className="hover:shadow-md transiton-shadow hover:bg-gray-100 rounded-2xl bg-white backdrop-blur-md border border-white/70 shadow-lg p-6 ring-1 ring-black/10">
-                        <h3 className = "mb-2 text-lg font-semibold font-poppins">Phone Number 📱</h3>
+                        <h3 className = "mb-2 text-lg font-semibold font-poppins">Phone Number </h3>
                         <p className = "text-gray-600">
                             973-727-6385
                         </p>
@@ -32,16 +32,26 @@ function ResumeCard() {
 
                     <div className="hover:shadow-md transiton-shadow hover:bg-gray-100 rounded-2xl bg-white backdrop-blur-md border border-white/70 shadow-lg p-6 ring-1 ring-black/10">
                         <h3 className = "mb-2 text-lg font-semibold font-poppins">LinkedIn</h3>
-                        <p className = "text-gray-600">
-                            https://www.linkedin.com/in/keshav-sheth/
-                        </p>
+                        <a
+                            href="https://www.linkedin.com/in/keshav-sheth/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600"
+                        >
+                           https://www.linkedin.com/in/keshav-sheth/
+                        </a>
                     </div>
 
                     <div className="hover:shadow-md transiton-shadow hover:bg-gray-100 rounded-2xl bg-white backdrop-blur-md border border-white/70 shadow-lg p-6 ring-1 ring-black/10">
                         <h3 className = "mb-2 text-lg font-semibold font-poppins">GitHub</h3>
-                        <p className = "text-gray-600">
-                            ksheth24
-                        </p>
+                        <a
+                            href="https://github.com/ksheth24"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600"
+                        >
+                           https://github.com/ksheth24
+                        </a>
                     </div>
 
                 </div>

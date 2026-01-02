@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";<span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Python</span>
+import RoboNavModal from "./RoboNavModal";
 
 export default function RoboNavProjectCard() {
     const [open, setOpen] = useState(false);
@@ -15,16 +16,19 @@ export default function RoboNavProjectCard() {
                 height={1000}
             />
             <p className = "mt-2 text-sm text-gray-600">
-            Movie Store is a full-stack Django app for browsing movies, writing reviews, and buying films via a simple shopping cart.            </p>
+            A lightweight React dashboard for monitoring and controlling the University Rover Challenge vehicle. It provides real-time telemetry, navigation, and control interfaces for testing and operation.            </p>
             <div className="mt-4 flex flex-wrap gap-2 text-xs text-neutral-500">
-                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Django</span>
-                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Python</span>
-                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">MySQL</span>
+                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">ROS2</span>
+                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">React</span>
+                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">TypeScript</span>
+                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Tailwind CSS</span>
+                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Material UI</span>
             </div>
             <div className="pt-4 flex justify-end">
                 <span className="text-sm text-neutral-500">Learn More → </span>
             </div>
         </div>
+        {open && <RoboNavModal onClose={() => setOpen(false)} />}
         </>
     )
 }

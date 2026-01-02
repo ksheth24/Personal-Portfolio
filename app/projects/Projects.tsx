@@ -3,7 +3,7 @@ import HPSProjectCard from "./HospitalManagementSystem/HPSProjectCard";
 import TPAgentProjectCard from "./AI Travel Agent/TPAgentProjectCard";
 import MovieStoreProjectCard from "./Movie Store/MovieStoreProjectCard";
 import CampusCraveProjectCard from "./CampusCrave/CampusCraveProjectCard";
-import RoboNavProjectCard from "./RoboNav/MovieStoreProjectCard";
+import RoboNavProjectCard from "./RoboNav/RoboNavProjectCard";
 
 function ProjectsCard() {
     return (
