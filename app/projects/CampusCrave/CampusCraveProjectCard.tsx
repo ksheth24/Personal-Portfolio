@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 
-export default function HPSProjectCard() {
+export default function CampusCraveProjectCard() {
     const [open, setOpen] = useState(false);
     return (
         <>
@@ -16,16 +16,16 @@ export default function HPSProjectCard() {
                 height={1000}
             />
             <p className = "mt-2 text-sm text-gray-600">
-                A full-stack hospital management platform designed to sreamline patient intake, medical staff workflows, and hospital record management
+            CampusCrave connects Georgia Tech student chefs with hungry students craving homemade food.
+It’s a student-driven marketplace for discovering, ordering, and selling meals on campus.
+Fast, local, and built by students for students.            
             </p>
             <div className="mt-4 flex flex-wrap gap-2 text-xs text-neutral-500">
-                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Flask</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">REST APIs</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">React</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Node.js</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">JavaScript</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">CSS</span>
-                <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">SQL Database Design</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">MySQL</span>
             </div>
             <div className="pt-4 flex justify-end">
