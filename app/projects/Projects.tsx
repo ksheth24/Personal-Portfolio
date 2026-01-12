@@ -4,6 +4,7 @@ import TPAgentProjectCard from "./AI Travel Agent/TPAgentProjectCard";
 import MovieStoreProjectCard from "./Movie Store/MovieStoreProjectCard";
 import CampusCraveProjectCard from "./CampusCrave/CampusCraveProjectCard";
 import RoboNavProjectCard from "./RoboNav/RoboNavProjectCard";
+import PersonalPortfolioProjectCard from "./PersonalPortolio/PersonalPortfolioProjectCard";
 
 function ProjectsCard() {
     return (
@@ -23,6 +24,7 @@ function ProjectsCard() {
                 <MovieStoreProjectCard />
                 <CampusCraveProjectCard />
                 <RoboNavProjectCard />
+                <PersonalPortfolioProjectCard />
             </div>
         </section>
     );

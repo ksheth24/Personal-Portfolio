@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**Personal Portfolio**
 
-## Getting Started
+An interactive portfolio showcasing projects, experience, and skills with responsive, animated project cards, searchable/filterable views, and detailed modal previews. Focused on clarity and accessibility, it delivers fast navigation, and convenient contact/resume access
 
-First, run the development server:
+**Key Features**
+- **Sleek Home Screen** 
+Hero section with a short introduction, rotating highlight text, and quick links to projects and resume; sets the visual tone and primary call-to-action. Emphasis on ease of navigation between pages. 
+![Home Screenshot](static/Home.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Projects Overview** 
+Grid of interactive project cards with short summaries and affordances to open detailed views. Each project overview is accompanied with details on technologies used.
+
+- **Project Details** Expanded project presentation that users can navigate to from the projects page with key features, screenshots, and links (demo / repo); used for in-depth context without leaving the projects list.
+
+- **Experience Page** Chronological timeline or list of roles and accomplishments with company/project highlights and concise impact statements.
+
+- **Resume/Contact Page** Printable / downloadable resume view plus a concise summary of skills and certifications; includes a clear download or open-resume action.
+
+Place your screenshots in the `public/` folder (or any folder you prefer) and replace the placeholders below with the actual image filenames.
+
+- **Home / Hero:** ![Home Screenshot](public/screenshots/home.png)
+- **Projects Grid:** ![Projects Screenshot](public/screenshots/projects.png)
+- **Project Modal / Detail:** ![Project Modal Screenshot](public/screenshots/project-modal.png)
+- **Resume Page:** ![Resume Screenshot](public/screenshots/resume.png)
+
+**Getting Started**
+1. Install dependencies:
+
+```
+cd Personal-Portfolio
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Open your browser to `http://localhost:3000` and view the site.
 
-## Learn More
+**Project Structure (high level)**
+- **app/**: Main application pages and components.
+- **public/**: Static assets and screenshots.
+- **components/**: Reusable UI components and animations.
+- **lib/**: Utility helpers.
+- **package.json**: Scripts and dependencies.
 
-To learn more about Next.js, take a look at the following resources:
+See the project card component for the portfolio entry at [app/projects/PersonalPortolio/PersonalPortfolioProjectCard.tsx](app/projects/PersonalPortolio/PersonalPortfolioProjectCard.tsx).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Contributing**
+- Open an issue or submit a pull request with improvements or fixes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Contact**
+- Replace this section with your preferred contact method (email, LinkedIn, etc.).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Update the image filenames in the Screenshots section after adding actual screenshots to the repository.
