@@ -8,7 +8,7 @@ import PersonalPortfolioProjectCard from "./PersonalPortolio/PersonalPortfolioPr
 
 function ProjectsCard() {
     return (
-        <section className = "relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-100 via-sky-100 to-blue-200">
+        <section className = "relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-100 via-sky-100 to-blue-200 pb-24">
             <div className="flex justify-center pt-12">
                 <Card />
             </div>
