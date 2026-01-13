@@ -28,16 +28,18 @@ export default function PersonalPortfolioContent() {
           </a>
           </div>
           <p className="mt-3 text-gray-600">
-          Movie Store is a simple Django-based online movie storefront and review platform. It provides movie browsing and detail pages, user accounts (signup/login), review creation and editing, a shopping cart with a purchase flow, and an admin interface for managing content.
-          </p>
+An interactive portfolio showcasing projects, experience, and skills with responsive, animated project cards, searchable/filterable views, and detailed modal previews. Focused on clarity and accessibility, it delivers fast navigation, and convenient contact/resume access          
+</p>
         </div>
   
         {/* TECH STACK */}
         <div className="flex flex-wrap gap-2">
           {[
-            "Django",
-            "Python",
-            "MySQL",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Next.js",
+            "Vercel"
           ].map((tech) => (
             <span
               key={tech}
@@ -53,76 +55,57 @@ export default function PersonalPortfolioContent() {
           <h3 className="mb-3 text-xl font-semibold font-poppins">Key Features</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
 <li>
-  <span className="font-bold">Browse movies and view details:</span>{" "}
-  A searchable, paginated listing of available movies with thumbnails. Each
-  movie has a dedicated detail page showing synopsis, genre, release date,
-  runtime, rating, available stock, full-size image, and a list of reviews.
-  Detail pages also include an “Add to cart” control (if the item is in stock)
-  and related-movie suggestions.
+  <span className="font-bold">Sleek Home Screen</span>{" "}
+Hero section with a short introduction, rotating highlight text, and quick links to projects and resume; sets the visual tone and primary call-to-action. Emphasis on ease of navigation between pages. 
 </li>
 <img
-  src = "/MovieStore/MoviePage.png"
+  src = "/PersonalPortfolio/Home.png"
   className = "w-200 mx-auto rounded-xl"
-  alt = "MoviePage"
+  alt = "Home Page"
 />
 
 <li>
   <span className="font-bold">
-    Create, edit, and delete reviews (authenticated users):
+    Projects Overview
   </span>{" "}
-  Registered users can post reviews on movie pages that include a text body and
-  a numeric rating. Users may edit or delete only their own reviews. Reviews are
-  displayed on movie detail pages, aggregated into an average rating, and can be
-  moderated by admins.
+Grid of interactive project cards with short summaries and affordances to open detailed views. Each project overview is accompanied with details on technologies used.
 </li>
 <img
-  src = "/MovieStore/Review.png"
+  src = "/PersonalPortfolio/ProjectsPage.png"
   className = "w-200 mx-auto rounded-xl"
-  alt = "MoviePage"
+  alt = "Projects Page"
 />
 <li>
   <span className="font-bold">
-    User accounts with signup, login, and profile:
+    Project Details
   </span>{" "}
-  Email/password signup and login flows with session-based authentication. The
-  accounts app provides signup, login, logout, and a user profile page where
-  users can view past orders, manage basic profile informatimage.pngion, and see their
-  submitted reviews. Password reset flows can be enabled via Django’s built-in
-  authentication views.
+  Expanded project presentation that users can navigate to from the projects page with key features, screenshots, and links (demo / repo); used for in-depth context without leaving the projects list.
 </li>
 <img
-  src = "/MovieStore/SignUp.png"
-  className = "w-200 mx-auto rounded-xl"
-  alt = "MoviePage"
-/>
-<img
-  src = "/MovieStore/Login.png"
+  src = "/PersonalPortfolio/ProjectDetail.png"
   className = "w-200 mx-auto rounded-xl"
   alt = "MoviePage"
 />
 <li className="">
   <span className="font-bold">
-    Shopping cart and purchase flow:
+    Experience Page
   </span>{" "}
-  Add movies to a persistent cart (session-backed for anonymous users, account-backed for logged-in users). The cart shows line items, quantities, subtotal, and allows updating quantities or removing items. The purchase page simulates checkout (no payment gateway by default) and creates an order record that reduces item stock. Order receipts and history are available on the user’s account page.
+  Chronological timeline or list of roles and accomplishments with company/project highlights and concise impact statements.
 </li>
 <img
-  src = "/MovieStore/Shopping.png"
+  src = "/PersonalPortfolio/Experience.png"
   className = "w-200 mx-auto rounded-xl"
   alt = "MoviePage"
 />
 
 <li className="">
   <span className="font-bold">
-    Admin dashboard for content and order management:
+    Resume/Contact Page
   </span>{" "}
-  Uses Django admin to let site maintainers add and edit movies, manage inventory,
-  view and moderate reviews, and inspect orders. Admins can upload movie images,
-  change prices, and adjust stock counts. The project is ready to integrate admin
-  customizations and additional permissions if needed.
+Printable / downloadable resume view plus a concise summary of skills and certifications; includes a clear download or open-resume action.
 </li>
 <img
-  src = "/MovieStore/Admin.png"
+  src = "/PersonalPortfolio/Resume.png"
   className = "w-200 mx-auto rounded-xl"
   alt = "MoviePage"
 />
