@@ -5,6 +5,7 @@ import MovieStoreProjectCard from "./Movie Store/MovieStoreProjectCard";
 import CampusCraveProjectCard from "./CampusCrave/CampusCraveProjectCard";
 import RoboNavProjectCard from "./RoboNav/RoboNavProjectCard";
 import PersonalPortfolioProjectCard from "./PersonalPortolio/PersonalPortfolioProjectCard";
+import OHProjectCard from "./Office Hours Queue/OHProjectCard";
 
 function ProjectsCard() {
     return (
@@ -20,9 +21,10 @@ function ProjectsCard() {
             </div>
             <div className="grid lg:grid-cols-3 gap-6 pt-1 px-5">
                 <TPAgentProjectCard />
-                <HPSProjectCard />
-                <MovieStoreProjectCard />
+                <HPSProjectCard /> 
                 <CampusCraveProjectCard />
+                <OHProjectCard />
+                <MovieStoreProjectCard />
                 <RoboNavProjectCard />
                 <PersonalPortfolioProjectCard />
             </div>

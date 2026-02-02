@@ -72,22 +72,21 @@ export default function HospitalContent() {
             <li>Patient intake and visit tracking</li>
             <li>Medical staff workflow management</li>
             <li>Normalized relational database schema</li>
-            <li>RESTful backend for scalable frontend integration</li>
+            <li> <strong>RESTful backend </strong> for scalable frontend integration</li>
           </ul>
         </div>
   
         <div>
           <h3 className="mb-3 text-xl font-semibold font-poppins">Database Design</h3>
           <p className="mb-4 text-gray-600">
-            The backend MySQL store was build in a staged process, stemming from EERD diagramming
-            uesd to maintain clear relationships within the hospital system.
+            The backend <strong> MySQL store</strong> was build in a staged process, stemming from <strong>EERD diagramming</strong> used to maintain clear relationships within the hospital system.
             <img
                  src="/EERD.png"
                 className="rounded-xl border"
                 alt="Hospital homepage"
             />
-            The following steps included schema mapping, as well as normalization and table creation with strict
-            foreign-key relationships to maintain data integrity
+            The following steps included<strong> schema mapping</strong>, as well as <strong>normalization </strong>and <strong>table creation with strict
+            foreign-key relationships</strong> to maintain <strong>data integrity</strong>
             across patients, visits, staff, and medical records.
           </p>
         </div>
