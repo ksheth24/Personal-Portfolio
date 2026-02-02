@@ -72,13 +72,14 @@ Full-stack queue management system for ECE 2035 office hours, which is the class
           <p className="mb-4 text-gray-600">
             Below is a demo of the new and improved Office Hours Queue Management System that I developed to address these challenges. Students can <strong>easily join the queue</strong> and see how many people are in the queue, allowing them to<strong> gauge their expected wait time</strong>. TAs can <strong>efficiently manage the queue</strong>, call on students, and mark questions as resolved.
           </p>
-          <video
-              src="/OHQueue/Demo.mp4"
-              controls
-              className="rounded-xl border"
-            />
+          <iframe
+  className="rounded-xl w-full aspect-video"
+  src="https://www.youtube.com/embed/KB9wMeSZ7M4"
+  title="OHQueue Demo"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
         </div>
-
         <div>
           <h3 className="mb-3 text-xl font-semibold font-poppins ">Technical Implementation</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
