@@ -50,7 +50,7 @@ export default function AgentContent() {
         </div>
         {/* FEATURES */}
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Key Features</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Key Features ⭐</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>Interactive chat interface with AI </li>
             <li>Dark/Light theme support</li>
@@ -64,7 +64,7 @@ export default function AgentContent() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Custom Tools Created</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Custom Tools Created  🛠️</h3>
           <ul className="list-decimal list-inside space-y-2 text-gray-700">
             <p className="font-bold">The following are all custom-made <strong>TypeScript tools</strong> to interface with the OpenAI LLM</p>
             <li> PlanTrip: This tool leverages the <strong>OpenAI API </strong>to create a custom tailored trip itinerary for your desired trip. After providing this tool with a start date, end date, travel destination, and personal interests, the tool feeds this information into OpenAI LLM model to create a travel itinerary. The tool is designed so that the model will always output the itinerary in a way that separates the activities for each day and provides restaurant and recommendations for each day.</li>

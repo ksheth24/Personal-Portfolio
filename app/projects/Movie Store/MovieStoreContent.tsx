@@ -50,7 +50,7 @@ export default function MovieStoreContent() {
           
         {/* FEATURES */}
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Key Features</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Key Features ⭐</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
 <li>
   <span className="font-bold">Browse movies and view details:</span>{" "}

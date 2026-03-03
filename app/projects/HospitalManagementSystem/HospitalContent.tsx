@@ -54,7 +54,7 @@ export default function HospitalContent() {
         </div>
   
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Tech Stack</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Tech Stack 🧰</h3>
           <div className = "flex flex-row space-x-2">
             <p className = "font-semibold"> Backend: </p>
             <p>  Python, Flask, MySQL (Locally Hosted), RESTful APIs </p>
@@ -67,7 +67,7 @@ export default function HospitalContent() {
           
         {/* FEATURES */}
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Key Features</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Key Features ⭐</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>Patient intake and visit tracking</li>
             <li>Medical staff workflow management</li>
@@ -77,7 +77,7 @@ export default function HospitalContent() {
         </div>
   
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Database Design</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Database Design 🧱</h3>
           <p className="mb-4 text-gray-600">
             The backend <strong> MySQL store</strong> was build in a staged process, stemming from <strong>EERD diagramming</strong> used to maintain clear relationships within the hospital system.
             <img
@@ -92,7 +92,7 @@ export default function HospitalContent() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Use Cases </h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Use Cases 👥 </h3>
           <ul className="list-decimal list-inside space-y-2 text-gray-700">
             <p className="font-bold">Views</p>
             <li> Get an overview of patient room assignments: displays key relationships between patients, and their medical staff, and the departments overseeing their care.</li>

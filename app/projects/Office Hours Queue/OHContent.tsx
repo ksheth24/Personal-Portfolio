@@ -38,6 +38,8 @@ Full-stack queue management system for ECE 2035 office hours, which is the class
             "REST APIs",
             "SpringBoot",
             "SQL Database Design",
+            "AWS RDS",
+            "AWS Elastic Beanstalk",
             "React",
             "Tailwind CSS", 
             "Next.js"
@@ -52,9 +54,9 @@ Full-stack queue management system for ECE 2035 office hours, which is the class
         </div>
         
 
-        {/* Problem I'm Solving */}
+        {/* Problem I'm Solving 🛠️*/}
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins">Problem I'm Solving</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins">Problem I'm Solving 🛠️</h3>
           <p className="mb-4 text-gray-600">
             As a TA for ECE 2035, I noticed that managing office hours was challenging due to the lack of an organized system that ensures students 
             got the help they needed in a timely manner. Often students would arrive and find long wait times, leading to frustration and decreased productivity.
@@ -68,7 +70,7 @@ Full-stack queue management system for ECE 2035 office hours, which is the class
             />
         </div>
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins ">Queue Management System Demo</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins ">Queue Management System Demo 🎥</h3>
           <p className="mb-4 text-gray-600">
             Below is a demo of the new and improved Office Hours Queue Management System that I developed to address these challenges. Students can <strong>easily join the queue</strong> and see how many people are in the queue, allowing them to<strong> gauge their expected wait time</strong>. TAs can <strong>efficiently manage the queue</strong>, call on students, and mark questions as resolved.
           </p>
@@ -81,11 +83,12 @@ Full-stack queue management system for ECE 2035 office hours, which is the class
 />
         </div>
         <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins ">Technical Implementation</h3>
+          <h3 className="mb-3 text-xl font-semibold font-poppins ">Technical Implementation ⚙️</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
 <li><strong>Backend: </strong>The backend is built using <strong>SpringBoot </strong>and <strong>REST APIs</strong>. It is seperated into a <strong>three-tier layered architecture</strong>. The <strong>controller layer </strong>is the client facing 
   layer that handles API requests and responses. The <strong>service layer</strong> contains business logic and interacts with the database layer. Finally, the <strong>database layer</strong> implements SQL queries and manages data persistance. Custom APIs handle operations such as: joining the queue, finding the size of the queue, getting queue details, and updating question status.</li>
 <li><strong>Database Layer: </strong>The databse is implemented using a locally hosted <strong>MySQL data store</strong>. It stores all queue details, so that office hour analytics can be generated. A custom view is used to display queue information on the TA dashboard.</li>
+<li> <strong>AWS Deployment: </strong> To make this a production app that could be accessed on-demand by ECE 2035 students, I deployed the MySQL database to <strong>AWS RDS</strong> and the SpringBoot backend to <strong>AWS Elastic Beanstalk</strong>. I'm currently working on integrating a CI pipeline with GitHub Actions for the backend.</li>
           </ul>
         </div>
       </div>

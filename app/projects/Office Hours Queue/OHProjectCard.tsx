@@ -22,6 +22,8 @@ Full-stack queue management system for ECE 2035 office hours, which is the class
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">REST APIs</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">SpringBoot</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">SQL Database Design</span>
+                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">AWS RDS</span>
+                  <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">AWS Elastic Beanstalk</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">React</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Tailwind CSS</span>
                 <span className="rounded-full bg-neutral-100 px-3 py-1 font-bold">Next.js</span>
