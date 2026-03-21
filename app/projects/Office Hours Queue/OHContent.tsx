@@ -82,15 +82,25 @@ Full-stack queue management system for ECE 2035 office hours, which is the class
   allowFullScreen
 />
         </div>
-        <div>
-          <h3 className="mb-3 text-xl font-semibold font-poppins ">Technical Implementation ⚙️</h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-<li><strong>Backend: </strong>The backend is built using <strong>SpringBoot </strong>and <strong>REST APIs</strong>. It is seperated into a <strong>three-tier layered architecture</strong>. The <strong>controller layer </strong>is the client facing 
-  layer that handles API requests and responses. The <strong>service layer</strong> contains business logic and interacts with the database layer. Finally, the <strong>database layer</strong> implements SQL queries and manages data persistance. Custom APIs handle operations such as: joining the queue, finding the size of the queue, getting queue details, and updating question status.</li>
-<li><strong>Database Layer: </strong>The databse is implemented using a locally hosted <strong>MySQL data store</strong>. It stores all queue details, so that office hour analytics can be generated. A custom view is used to display queue information on the TA dashboard.</li>
-<li> <strong>AWS Deployment: </strong> To make this a production app that could be accessed on-demand by ECE 2035 students, I deployed the MySQL database to <strong>AWS RDS</strong> and the SpringBoot backend to <strong>AWS Elastic Beanstalk</strong>. I'm currently working on integrating a CI pipeline with GitHub Actions for the backend.</li>
-          </ul>
-        </div>
+<div>
+  <h3 className="mb-4 text-xl font-semibold font-poppins">Technical Implementation ⚙️</h3>
+  <div className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-4">
+    {[
+      { label: "Backend",        color: "blue",   desc: <>Built with <strong>SpringBoot</strong> and <strong>REST APIs</strong> using a three-tier layered architecture. The <strong>controller layer</strong> handles API requests, the <strong>service layer</strong> contains business logic, and the <strong>database layer</strong> manages SQL queries and persistence. Custom APIs handle queue operations — joining, sizing, fetching details, and updating question status.</> },
+      { label: "Database",       color: "orange", desc: <>Powered by a locally hosted <strong>MySQL</strong> data store that persists all queue details for office hour analytics. A custom view surfaces queue information directly on the TA dashboard.</> },
+      { label: "AWS Deployment", color: "yellow", desc: <>Database deployed to <strong>AWS RDS</strong> and the SpringBoot backend to <strong>AWS Elastic Beanstalk</strong> for on-demand access by ECE 2035 students. CI pipeline via <strong>GitHub Actions</strong> currently in progress.</> },
+    ].map(({ label, color, desc }) => (
+      <>
+        <span key={label + "-badge"} className={`mt-0.5 h-fit rounded-md border px-2.5 py-1 font-mono text-[11px] font-medium whitespace-nowrap
+          ${color === "blue"   ? "border-blue-200 text-blue-600 bg-blue-50"         : ""}
+          ${color === "orange" ? "border-orange-200 text-orange-600 bg-orange-50"   : ""}
+          ${color === "yellow" ? "border-yellow-200 text-yellow-600 bg-yellow-50"   : ""}
+        `}>{label}</span>
+        <p key={label + "-desc"} className="text-sm text-gray-600 leading-relaxed">{desc}</p>
+      </>
+    ))}
+  </div>
+</div>
       </div>
     );
   }
