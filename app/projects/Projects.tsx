@@ -9,6 +9,7 @@ import CampusCraveProjectCard from "./CampusCrave/CampusCraveProjectCard";
 import RoboNavProjectCard from "./RoboNav/RoboNavProjectCard";
 import PersonalPortfolioProjectCard from "./PersonalPortolio/PersonalPortfolioProjectCard";
 import OHProjectCard from "./Office Hours Queue/OHProjectCard";
+import SnakeProjectCard from "./Embedded Snake Game/SnakeProjectCard";
 
 function ProjectsCard() {
     const [isHardware, setIsHardware] = useState(false);
@@ -24,7 +25,7 @@ function ProjectsCard() {
         whiteSpace: "nowrap",
         transition: "all 0.2s",
         cursor: "pointer",
-        color: active ? "#000000" : "#64748b",
+        color: active ? "#000000" : "#ffffff",
         background: active ? "white" : "transparent",
     });
 
@@ -40,7 +41,7 @@ function ProjectsCard() {
                         display: "inline-flex",
                         alignItems: "center",
                         cursor: "pointer",
-                        background: "#0f172a",
+                        background: "#000000",
                         borderRadius: 999,
                         padding: 5,
                         gap: 2,
@@ -48,26 +49,11 @@ function ProjectsCard() {
                 >
                     {/* Software segment */}
                     <div style={segStyle(!isHardware)}>
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <polyline
-                                points="1,11 5,6 9,10 15,3"
-                                stroke={!isHardware ? "#0f172a" : "#64748b"}
-                                strokeWidth="1.8"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
                         Software
                     </div>
 
                     {/* Hardware segment */}
                     <div style={segStyle(isHardware)}>
-                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                            <rect x="2" y="2" width="5" height="5" rx="1" fill={isHardware ? "#0f172a" : "#64748b"} />
-                            <rect x="9" y="2" width="5" height="5" rx="1" fill={isHardware ? "#0f172a" : "#64748b"} />
-                            <rect x="2" y="9" width="5" height="5" rx="1" fill={isHardware ? "#0f172a" : "#64748b"} />
-                            <rect x="9" y="9" width="5" height="5" rx="1" fill={isHardware ? "#0f172a" : "#64748b"} />
-                        </svg>
                         Hardware
                     </div>
                 </div>
@@ -88,15 +74,8 @@ function ProjectsCard() {
 
             {/* Project grid */}
             {isHardware ? (
-                <div className="flex flex-col items-center justify-center gap-4 pt-12 text-slate-500 font-poppins">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                        <rect x="6" y="6" width="15" height="15" rx="3" fill="#cbd5e1" />
-                        <rect x="27" y="6" width="15" height="15" rx="3" fill="#cbd5e1" />
-                        <rect x="6" y="27" width="15" height="15" rx="3" fill="#cbd5e1" />
-                        <rect x="27" y="27" width="15" height="15" rx="3" fill="#cbd5e1" />
-                    </svg>
-                    <p className="text-lg font-medium text-slate-400">Hardware projects coming soon</p>
-                    <p className="text-sm text-slate-400">Check back later!</p>
+                <div className="grid lg:grid-cols-3 gap-6 pt-1 px-5">
+                    <SnakeProjectCard />
                 </div>
             ) : (
                 <div className="grid lg:grid-cols-3 gap-6 pt-1 px-5">
