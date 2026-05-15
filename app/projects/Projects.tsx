@@ -14,7 +14,7 @@ import SnakeProjectCard from "./Embedded Snake Game/SnakeProjectCard";
 function ProjectsCard() {
     const [isHardware, setIsHardware] = useState(false);
 
-    const segStyle = (active) => ({
+    const segStyle = (active: boolean) => ({
         display: "flex",
         alignItems: "center",
         gap: 6,
