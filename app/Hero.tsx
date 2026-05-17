@@ -31,9 +31,9 @@ function Hero() {
                             <RotatingText
                                 text={[
                                     "Computer Engineer",
-                                    "Software Engineer",
+                                    "SWE @ Goldman Sachs",
                                     "Previous SWE @ Verizon",
-                                    "Team Lead @ Smart Stadium",
+                                    "Apps Team Lead @ Georgia Tech Smart Stadium",
                                 ]}
                             />
                         </span>

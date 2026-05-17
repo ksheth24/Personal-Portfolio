@@ -10,6 +10,7 @@ import RoboNavProjectCard from "./RoboNav/RoboNavProjectCard";
 import PersonalPortfolioProjectCard from "./PersonalPortolio/PersonalPortfolioProjectCard";
 import OHProjectCard from "./Office Hours Queue/OHProjectCard";
 import SnakeProjectCard from "./Embedded Snake Game/SnakeProjectCard";
+import MastermindProjectCard from "./MastermindGame/MastermindProjectCard";
 
 function ProjectsCard() {
     const [isHardware, setIsHardware] = useState(false);
@@ -75,6 +76,7 @@ function ProjectsCard() {
             {/* Project grid */}
             {isHardware ? (
                 <div className="grid lg:grid-cols-3 gap-6 pt-1 px-5">
+                    <MastermindProjectCard />
                     <SnakeProjectCard />
                 </div>
             ) : (
