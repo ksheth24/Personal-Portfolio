@@ -82,8 +82,8 @@ function ProjectsCard() {
             ) : (
                 <div className="grid lg:grid-cols-3 gap-6 pt-1 px-5">
                     <TPAgentProjectCard />
-                    <HPSProjectCard />
                     <CampusCraveProjectCard />
+                    <HPSProjectCard />
                     <OHProjectCard />
                     <MovieStoreProjectCard />
                     <RoboNavProjectCard />
